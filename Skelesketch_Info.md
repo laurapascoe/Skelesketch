@@ -6,11 +6,11 @@ Working Institute: Van Andel Institute
 
 This is a prototype ImageJ macro for microglia identification and categorization; we are very open to feedback! More work and testing will be done in the coming months, so any comments and questions are appreciated! 
 
-Abstract 
+# Abstract 
 
 Microglial morphology is widely used as an indicator of activation state, but existing analysis approaches are often labor-intensive, require specialized imaging systems, or depend on proprietary software. We developed SkeleSketch, an open-source ImageJ/Fiji plugin that automates microglial skeletonization and morphological quantification while allowing user-guided corrections. The pipeline was evaluated using GFP-labeled microglia and immunostained spinal cord sections from LPS-treated mice. SkeleSketch accurately identified and skeletonized microglia across multiple labeling strategies (CX3CR1-GFP, Iba1, and P2Y12). Quantitative analyses reliably detected LPS-induced increases in soma size and reductions in branch number and branch length. SkeleSketch provides an accessible, reproducible, and flexible solution for microglial morphology analysis that is compatible with both epifluorescence and confocal imaging platforms.  
 
-Introduction 
+# Introduction 
 
 Microglia serve as the resident macrophages of the central nervous system (CNS), representing approximately 5–12% of all CNS cells and acting as the main innate immune cells in the brain. They play essential roles in immune surveillance, host defense, phagocytosis, and  the maintenance of cellular homeostasis. In addition to these well-established immune functions, microglia actively contribute to synaptic pruning, adult neurogenesis, and the modulation of neuronal networks, thereby influencing brain development and function (Kent & Miron, 2024; Vilhardt et al., 2017). 
 
