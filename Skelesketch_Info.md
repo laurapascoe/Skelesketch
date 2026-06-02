@@ -1,3 +1,25 @@
 # Skelesketch
-ImageJ Macro to Categorize Microglia Morphology 
+A Microglia Morphological Analysis Pipeline 
+Contact Information: laura.pascoe@vai.org
+PI: Qiang Zhu 
+Working Institute: Van Andel Institute
 
+This is a prototype ImageJ macro for microglia identification and categorization; we are very open to feedback! More work and testing will be done in the coming months, so any comments and questions are appreciated! 
+
+Abstract 
+
+Microglial morphology is widely used as an indicator of activation state, but existing analysis approaches are often labor-intensive, require specialized imaging systems, or depend on proprietary software. We developed SkeleSketch, an open-source ImageJ/Fiji plugin that automates microglial skeletonization and morphological quantification while allowing user-guided corrections. The pipeline was evaluated using GFP-labeled microglia and immunostained spinal cord sections from LPS-treated mice. SkeleSketch accurately identified and skeletonized microglia across multiple labeling strategies (CX3CR1-GFP, Iba1, and P2Y12). Quantitative analyses reliably detected LPS-induced increases in soma size and reductions in branch number and branch length. SkeleSketch provides an accessible, reproducible, and flexible solution for microglial morphology analysis that is compatible with both epifluorescence and confocal imaging platforms.  
+
+Introduction 
+
+Microglia serve as the resident macrophages of the central nervous system (CNS), representing approximately 5–12% of all CNS cells and acting as the main innate immune cells in the brain. They play essential roles in immune surveillance, host defense, phagocytosis, and  the maintenance of cellular homeostasis. In addition to these well-established immune functions, microglia actively contribute to synaptic pruning, adult neurogenesis, and the modulation of neuronal networks, thereby influencing brain development and function (Kent & Miron, 2024; Vilhardt et al., 2017). 
+
+Under physiological conditions, microglia exhibit a highly ramified morphology characterized by a small soma and long, fine processes that continuously survey the surrounding microenvironment. In response to injury, infection, aging, or disruptions in CNS homeostasis, microglia undergo rapid morphological and functional changes, including retraction and thickening of processes, enlargement of the soma, and shifts in gene expression and effector functions (Colonna & Butovsky, 2017; Saijo & Glass, 2011; Sica & Mantovani, 2012).  
+
+Microglial morphology is closely linked to cellular function and has emerged as a valuable and widely used readout of microglial activation state. Microglial morphology is closely linked to functional state and has therefore emergedserves as a valuable and widely used readout in studies of brain homeostasis and disease. Alterations in microglial morphology have been documented across numerous neurodegenerative disorders, including Alzheimer's disease, Parkinson's disease, amyotrophic lateral sclerosis, and multiple sclerosis, as well as during normal aging. Striking changes in microglial morphology have been reported across a broad range of neurodegenerative disorders, including Alzheimer’s disease, Parkinson’s disease, amyotrophic lateral sclerosis, and multiple sclerosis, as well as in normal aging (reviewed in (Carr et al., 2025; Cheng & Ho, 2025; Gao et al., 2023). In both human tissue and experimental models, these morphological changes are often associated with disease progression, regional vulnerability, and neuroinflammatory responses, highlighting the need for reliable ways to quantify microglial structure across pathological contexts (Augusto-Oliveira et al., 2025; Green & Rowe, 2024; Vidal-Itriago et al., 2022) 
+
+Despite the critical insights microglial morphological analysis can provide, current methodologies face several limitations, including time-consuming workflows, complex image processing, and the lack of standardized analysis pipelines. Although high-resolution imaging techniques such as confocal and two-photon microscopy offer detailed and accurate data, they are costly and often inaccessible to smaller laboratories. Conversely, more affordable options like epifluorescence microscopy generate low-contrast images that complicate downstream analyses. Furthermore, existing software platforms are often expensive, proprietary, or restricted to specific imaging modalities, limiting their broad applicability across diverse experimental settings. 
+
+To address these challenges, we developed SkeleSketch, an open-source ImageJ/Fiji plugin that automates microglial skeletonization and morphological quantification while maintaining user oversight through optional manual corrections. The platform is designed to accommodate both high-resolution confocal datasets and lower-contrast epifluorescence images, thereby increasing accessibility across laboratories with varying imaging resources. 
+
+By integrating these capabilities, SkeleSketch establishes a standardized pipeline for analyzing microglial morphology. This approach facilitates the investigation of how microglial morphology reflects functional states and contributes to neuroinflammation and neurodegenerative disease mechanisms, offering a robust tool for advancing our understanding of microglial dynamics in health and disease. 
