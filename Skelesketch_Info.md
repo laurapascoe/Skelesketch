@@ -1,5 +1,4 @@
-# Skelesketch
-A Microglia Morphological Analysis Pipeline 
+# Skelesketch: A Microglia Morphological Analysis Pipeline 
 Contact Information: laura.pascoe@vai.org | PI: Qiang Zhu | Working Institute: Van Andel Institute
 
 This is a prototype ImageJ macro for microglia identification and categorization; we are very open to feedback! More work and testing will be done in the coming months, so any comments and questions are appreciated! 
